@@ -1,0 +1,179 @@
+/* Página Ofertas */
+
+.secao-ofertas {
+    padding: 8vh 2vw;
+}
+
+.secao-ofertas h1 {
+    font-size: 2.5vw;
+    color: #f4d79c;
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+
+.secao-ofertas .intro-texto {
+    text-align: center;
+    color: #d4af9d;
+    margin-bottom: 4vh;
+    font-size: 1.1vw;
+    line-height: 1.5;
+}
+
+/* Grid de Produtos */
+.grid-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    padding: 0 3vw;
+}
+
+.produto-card {
+    background-color: rgba(14, 13, 13, 0.5);
+    border-radius: 1.5vw;
+    overflow: hidden;
+    padding: 2vh;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card:hover {
+    background-color: rgba(14, 13, 13, 0.8);
+    transform: translateY(-0.5vh);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: 1vw;
+    filter: grayscale(65%);
+    transition: all 0.4s ease;
+}
+
+.produto-card img:hover {
+    filter: grayscale(0%);
+    opacity: 0.9;
+}
+
+.produto-info {
+    padding: 2vh 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-nome {
+    font-size: 1.2vw;
+    color: #d4af9d;
+    font-weight: 700;
+    margin-bottom: 0.8vh;
+    text-align: center;
+}
+
+.produto-preco {
+    font-size: 1.5vw;
+    color: #f4d79c;
+    font-weight: 900;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.produto-descricao {
+    font-size: 0.9vw;
+    color: #b0b0b0;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.btn-adicionar {
+    background-color: #ca1c1c;
+    color: white;
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    margin: 0.6rem auto 1rem;
+}
+
+.btn-adicionar:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+.produto-info del {
+    color: #fa0202;
+    font-size: 1.3vw;
+    margin-right: 0.5vw;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .grid-ofertas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        padding: 0 2vw;
+    }
+    
+    .secao-ofertas h1 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-ofertas {
+        grid-template-columns: 1fr;
+        gap: 1.5vw;
+        padding: 0 1vw;
+    }
+    
+    .secao-ofertas h1 {
+        font-size: 1.8vh;
+    }
+    
+    .secao-ofertas .intro-texto {
+        font-size: 1vh;
+    }
+    
+    .produto-nome {
+        font-size: 1vw;
+    }
+    
+    .produto-preco {
+        font-size: 1.2vw;
+    }
+    
+    .produto-descricao {
+        font-size: 0.8vw;
+    }
+}
+
+/* Breakpoints menores (celulares) */
+@media (max-width: 480px) {
+    .secao-ofertas { padding: 4vh 2vw; }
+    .secao-ofertas h1 { font-size: 1.4rem; }
+    .produto-card img { aspect-ratio: 4/3; }
+    .produto-nome { font-size: 1rem; }
+    .produto-preco { font-size: 1.1rem; }
+    .produto-descricao { font-size: 0.9rem; padding: 0 .5rem; }
+}
+
+/* Simples: tablet e desktop */
+@media (min-width: 601px) {
+    .grid-ofertas { grid-template-columns: repeat(2, 1fr); gap: 2rem; padding: 0 2rem; }
+    .secao-ofertas h1 { font-size: 2rem; }
+    .produto-card img { aspect-ratio: 16/10; height: auto; }
+}
+
+@media (min-width: 901px) {
+    .grid-ofertas { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; padding: 0 3rem; }
+    .secao-ofertas h1 { font-size: 2.5rem; }
+}
+
+

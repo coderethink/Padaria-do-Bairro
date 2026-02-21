@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Padaria do Bairro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ofertas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-principal">
+        <a href="./index.html" aria-label="Padaria do Bairro - Página inicial">
+            <img class="logo" src="./images/logo.jpg" alt="Logo Padaria do Bairro">
+        </a>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./index.html#cardapio">Cardápio</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-encomendas" aria-label="Fazer encomendas"><span>📦</span> Encomendas</button>
+    </header>
+
+    <main>
+        <section id="ofertas" class="secao-ofertas">
+            <div class="conteudo-secao">
+                <h1>Ofertas Toda Quarta-Feira</h1>
+                <p class="intro-texto">
+                    Confira nossas melhores ofertas e produtos em destaque
+                </p>
+
+                <div class="grid-ofertas">
+                    <figure class="produto-card">
+                        <img src="./images/pao.jpg" alt="Pão Croc-croc">
+                        <div class="produto-info">
+                            <p class="produto-nome">Pão Croc-croc</p>
+                            <p class="produto-preco">
+                                <del>R$ 8,00</del>
+                                <strong>R$5,00</strong>
+                            </p>
+                            <p class="produto-descricao">Pão crocante com grãos selecionados</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+
+                    <figure class="produto-card">
+                        <img src="./images/coofe.jpg" alt="Café Gourmet">
+                        <div class="produto-info">
+                            <p class="produto-nome">Café Gourmet</p>
+                            <p class="produto-preco">
+                                <del>R$ 4,00</del>
+                                <strong>R$3,50</strong>
+                            </p>
+                            <p class="produto-descricao">Sabor intenso e aroma irresistível</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+
+                    <figure class="produto-card">
+                        <img src="./images/pao.jpg" alt="Doce de Leite">
+                        <div class="produto-info">
+                            <p class="produto-nome">Doce de Leite</p>
+                            <p class="produto-preco">
+                                <del>R$ 12,00</del>
+                                <strong>R$8,00</strong>
+                            </p>
+                            <p class="produto-descricao">Cremoso e irresistível</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+
+                    <figure class="produto-card">
+                        <img src="./images/coofe.jpg" alt="Bolo de Chocolate">
+                        <div class="produto-info">
+                            <p class="produto-nome">Bolo de Chocolate</p>
+                            <p class="produto-preco">
+                                <del>R$ 16,00</del>
+                                <strong>R$9,00</strong>
+                            </p>
+                            <p class="produto-descricao">Úmido e delicioso</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+
+                    <figure class="produto-card">
+                        <img src="./images/pao.jpg" alt="Croissant de Amêndoas">
+                        <div class="produto-info">
+                            <p class="produto-nome">Croissant Amêndoas</p>
+                            <p class="produto-preco">
+                                <del>R$ 9,60</del>
+                                <strong>R$7,40</strong>
+                            </p>
+                            <p class="produto-descricao">Massa folhada crocante</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+
+                    <figure class="produto-card">
+                        <img src="./images/coofe.jpg" alt="Pão de Queijo">
+                        <div class="produto-info">
+                            <p class="produto-nome">Pão de Queijo</p>
+                            <p class="produto-preco">
+                                <del>R$ 9,00</del>
+                                <strong>R$5,20</strong>
+                            </p>
+                            <p class="produto-descricao">Massa macia quentinha</p>
+                        </div>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-cafe">
+        <div class="footer-wrapper"> <!-- Apenas um container para centralizar -->
+
+            <!-- Identificação da Empresa -->
+            <section class="footer-brand">
+                <strong>🥖 Padaria do Bairro</strong>
+                <address>
+                    Rua Principal, 123<br>
+                    Bairro, Cidade - MG
+                </address>
+            </section>
+
+            <!-- Informação de Tempo/Horário -->
+            <section class="footer-hours">
+                <span class="label">Atendimento</span>
+                <p>Segunda a sexta: <time>06:00</time> às <time>20:00</time></p>
+                <p>Sábado: <time>06:00</time> às <time>18:00</time></p>
+                <p>Domingo: <time>07:00</time> às <time>14:00</time></p>
+            </section>
+
+            <!-- Contato e Navegação Legal -->
+            <section class="footer-contact">
+                <span class="label">Contato</span>
+                <a href="tel:+553799999999" class="phone">(37) 9999-9999</a>
+                <nav>
+                    <a href="privacidade.html">Política de Privacidade</a>
+                </nav>
+            </section>
+        </div>
+
+        <p class="copyright">
+            &copy; 2024 Padaria do Bairro. Todos os direitos reservados.
+        </p>
+        <a href="#" class="btn-topo">Volte ao início ▲</a>
+
+    </footer>
+
+
+
+</body>
+
+</html>

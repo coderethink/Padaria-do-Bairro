@@ -1,0 +1,52 @@
+/* CSS simples para a página de Política de Privacidade (versão para iniciantes) */
+.privacidade-secao { 
+    padding: 2rem 1rem;
+ }
+
+.privacidade-secao .conteudo-secao {
+     max-width: 900px;
+     margin: 0 auto; 
+    }
+.privacidade-secao h1 { 
+    color: #f4d79c; 
+    margin-bottom: 0.5rem;
+     font-size: 1.6rem;
+ }
+.privacidade-secao .lead { 
+    color: #d4af9d;
+     margin-bottom: 0.8rem; 
+}
+.privacidade-secao article { 
+    padding: 0.6rem 0; 
+    margin-bottom: 0.8rem;
+ }
+.privacidade-secao h2 { 
+    color: #f4d79c;
+     margin-bottom: 0.4rem;
+     font-size: 1rem; }
+.privacidade-secao p, .privacidade-secao li {
+     color: #e6e6e6; 
+     line-height: 1.5; }
+.privacidade-secao ul { 
+    margin-left: 1rem; }
+.privacidade-secao .muted {
+     color: #9b9b9b; 
+     margin-top: 0.5rem;
+      font-size: 0.9rem; }
+
+/* Links simples */
+.privacidade-secao a { color: #fbfafa;
+     text-decoration: underline; }
+
+@media (max-width: 900px) {
+    .privacidade-secao { padding: 1.5rem 0.8rem; }
+}
+
+/* Simples: tablet e desktop */
+@media (min-width: 601px) {
+    .privacidade-secao { padding: 2rem 2.5rem; }
+    .privacidade-secao .conteudo-secao { max-width: 900px; }
+    .privacidade-secao h1 { font-size: 1.6rem; }
+    .privacidade-secao p, .privacidade-secao li { font-size: 1rem; }
+}
+

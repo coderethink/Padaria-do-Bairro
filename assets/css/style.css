@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color: #fbfafa;
+}
+
+/* Cabeçalho */
+.header-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/assets/images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 19vh;
+    position: relative;
+}
+
+.logo {
+    display: relative;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: 0.3vw solid rgba(192, 99, 28, 0.662);
+    object-fit: cover;
+    margin: 12vh 0 0 3vh;
+}
+
+/* Navegação */
+nav ul {
+    display: relative;
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    font-size: 9vh;
+    font-weight: 700;
+    
+}
+nav ul li {
+    padding: 14vh 2vw 0 3vw;
+}
+nav ul li a {
+    color: #fbfafa;
+    background-color: rgba(14, 13, 13, 0.8);
+    border-radius: 1.5vw 1vh;
+    padding: 0.7vh 1.5vw;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(181, 161, 103);
+    background-color: rgba(3, 3, 3, 0.9);
+}
+
+/* Botão Encomendas */
+.btn-encomendas {
+    background-color: #ca1c1c;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    font-size: 1.2vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin: 4vw 1vh 0 0;
+}
+
+.btn-encomendas:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+/* Estilo moderno para o link de localização */
+.btn-local {
+    display: inline-block;
+    background: linear-gradient(180deg,#f4d79c,#e5c67a);
+    color: #111;
+    padding: 0.3rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+    transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+.btn-local:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.45); }
+.btn-local:active { transform: translateY(-1px); }
+.btn-local:focus { outline: 3px solid rgba(244,215,156,0.28); outline-offset: 3px; }
+
+
+/* Conteúdo principal */
+main {
+    padding: 5vh 0;
+}
+
+.secao {
+    padding: 8vh 2vw;
+}
+
+
+
+.conteudo-secao {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+
+
+/* Seção Sobre */
+#sobre .conteudo-secao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    align-items: center;
+}
+
+.artigo-historia header {
+    margin-bottom: 1.5vh;
+}
+
+.artigo-historia h1 {
+    font-size: 2vw;
+    font-weight: 900;
+    color: #f4d79c;
+    margin-bottom: 1vh;
+}
+
+.artigo-historia .lead {
+    font-size: 1.1vw;
+    color: #d4af9d;
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+.artigo-historia .descricao,
+.artigo-historia .agradecimento {
+    font-size: 1vw;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1.5vh;
+    text-align: justify;
+}
+
+.imagem-historia {
+    position: relative;
+    margin: 0;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.imagem-historia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(65%);
+    transition: all 0.4s ease;
+}
+
+.imagem-historia img:hover {
+    filter: grayscale(0%);
+    opacity: 0.9;
+}
+
+.btn-confira {
+    position: absolute;
+    bottom: 1.5vh;
+    right: 1.5vw;
+    padding: 0.8vh 2vw;
+    background-color: #5f4817;
+    color: #e8e3db;
+    border: none;
+    border-radius: 1.5vw 1vh;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+}
+
+.btn-confira:hover {
+    background-color: #8b6f47;
+    transform: scale(1.05);
+}
+
+/* Seções Ofertas e Cardápio */
+#ofertas h2,
+#cardapio h2 {
+    font-size: 2vw;
+    color: #f4d79c;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+/* Grid de Imagens */
+.grid-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    padding: 0 3vw;
+
+}
+
+.description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.3vw;
+    color: #d4af9d;
+    text-align:center;
+    padding: 0 1vw 0 3vh;
+    
+}
+
+.figura-grid img {
+    width: 100%;
+    border-radius: 1.5vw; 
+    filter: grayscale(9%);
+    transition: all 0.4s ease;
+}
+
+.figura-grid img:hover {
+    filter: grayscale(23%);
+    opacity: 0.9;
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 1.5vw;
+    margin-top: 2vh;
+}
+
+.footer-cafe {
+    background-color: #2c1e14; /* Cor Grão de Café */
+    color: #f5f5dc; /* Bege Creme */
+    padding: 50px 20px 20px;
+    font-family: sans-serif;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Seções Semânticas */
+.footer-cafe section {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Estilo das Etiquetas e Nomes */
+.footer-brand strong {
+    font-size: 1.4rem;
+    color: #d4a373; /* Tom Pão Assado */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #a67c52;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Elementos de Contato */
+address { font-style: normal; line-height: 1.5; }
+
+.phone {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #a67c52;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+/* Linha de Separação e Copyright */
+.copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #4a3728; /* Linha cor Café Médio */
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7d6350;
+}
+
+
+
+
+/* Ajuste para telas pequenas (celular) */
+@media (max-width: 350px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        
+        }
+        
+    }
+
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    #sobre .conteudo-secao {
+        grid-template-columns: 1fr;
+    }
+    
+    .artigo-historia h1 {
+        font-size: 2.5vh;
+    }
+}
+
+.btn-topo {
+    position: fixed;     /* Deixa o botão fixo na tela */
+    bottom: 20px;        /* Distância de 20px do fundo */
+    right: 20px;         /* Distância de 20px da direita */
+    font-weight: 700;
+    background-color: #f1c40fe2; /* Exemplo de cor da padaria */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4vh;  /* Deixa o botão redondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque */
+    z-index: 1000;       /* Garante que fique por cima de tudo */
+}
+
+/* Efeito suave de rolagem (opcional, mas recomendado) */
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+    .header-principal {
+        flex-direction: column;
+        height: auto;
+        
+    }
+    
+    nav ul  {
+        display: flex;
+        flex-direction: column;
+        margin: 0 12vh;
+    }
+    nav ul li {
+        padding: 1vh 0;
+    }
+    
+    .logo {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    .artigo-historia h1 {
+        font-size: 1.8vh;
+    }
+    
+    .artigo-historia .lead,
+    .artigo-historia .descricao,
+    .artigo-historia .agradecimento {
+        font-size: 1.3vh;
+    }
+    
+    .grid-imagens {
+        grid-template-columns: 1fr;
+        gap: 2vw;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2vh;
+
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+table th {
+    background-color: #f4d79c;
+    color: #000;
+    font-weight: 700;
+}
+
+table th:hover {
+    background-color: lch(97.95% 4.19 95.09);
+}
+table td:hover {
+    background-color: #f9f9f945;
+}
+
+/* -------------------------------------------------
+     Simples: responsividade mobile-first (iniciante)
+     Breakpoints: tablet (>=601px), desktop (>=901px)
+     Estas regras são intencionais e pequenas para facilitar
+     a leitura e manutenção por iniciantes.
+     ------------------------------------------------- */
+
+/* Tablet e acima */
+@media (min-width: 601px) {
+    .header-principal {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 16vh;
+        padding: 0 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin: 1rem;
+    }
+
+    #sobre .conteudo-secao {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .grid-imagens { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    iframe { height: 320px; }
+}
+
+/* Desktop e acima */
+@media (min-width: 901px) {
+    .header-principal { height: 19vh; }
+    .logo { width: 100px; height: 100px; }
+    nav ul { gap: 2rem; }
+    .artigo-historia h1 { font-size: 2rem; }
+    .grid-imagens { gap: 2.5rem; }
+    iframe { height: 400px; }
+}
+

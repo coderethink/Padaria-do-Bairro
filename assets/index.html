@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria do Bairro - Tradição desde 1970</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-principal">
+        <a href="index.html" aria-label="Padaria do Bairro - Página inicial">
+            <img class="logo" src="./images/logo.jpg" alt="Logo Padaria do Bairro">
+        </a>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-encomendas" aria-label="Fazer encomendas"><span>📦</span> Encomendas</button>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao">
+            <div class="conteudo-secao">
+                <article class="artigo-historia">
+                    <header>
+                        <h1>Desde 1970 - Tradição e sabores incomparáveis</h1>
+                        <p class="lead">A família Alves começou a trajetória em meados da década de 70.</p>
+                    </header>
+                    <p class="descricao">Em um local de harmonia que transformava e transforma até hoje amor em sabor.
+                    </p>
+                    <p class="agradecimento">A família Alves agradece a você cliente pela presença em nosso dia a dia!
+                    </p>
+                    <a class="btn-local" href="#localizacao"
+                        aria-label="Localização da Padaria do Bairro">Localização</a>
+                </article>
+                <figure class="imagem-historia">
+                    <img src="./images/Rectangle 10.jpg" alt="Padaria tradicional do bairro">
+                    <button class="btn-confira" onclick="window.location.href='./ofertas.html'">Confira</button>
+                </figure>
+            </div>
+        </section>
+
+        <section id="ofertas" class="secao">
+            <div class="conteudo-secao">
+                <h2>Saborosos do dia!</h2>
+                <div class="grid-imagens">
+                    <figure class="figura-grid">
+                        <img src="./images/pao.jpg" alt="Pão fresco do dia">
+                        <p class="description">
+                            Pão Croc-croc - Pão crocante com grãos selecionados.
+                        </p>
+                        <p class="description">R$ 8</p>
+                    </figure>
+                    <figure class="figura-grid">
+                        <img src="./images/coofe.jpg" alt="Café quentinho">
+                        <p class="description">
+                            Café gourmet - Sabor intenso e aroma irresistível.
+                        </p>
+                        <p class="description">R$ 6</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="secao">
+            <div class="conteudo-secao">
+                <h2>Cardápio</h2>
+                <!-- Futúro: cardápio completo será adicionado aqui -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pão Croc-croc</td>
+                            <td>Pão crocante com grãos selecionados.</td>
+                            <td>R$ 8</td>
+                        </tr>
+                        <tr>
+                            <td>Café gourmet</td>
+                            <td>Sabor intenso e aroma irresistível.</td>
+                            <td>R$ 6</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                doce de leite - Doce de leite cremoso e irresistível.
+                            </td>
+                            <td>
+                                sabor suave e textura aveludada, perfeito para acompanhar pães e bolos.
+                            </td>
+                            <td>R$ 10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                bolo de chocolate - Bolo de chocolate úmido e delicioso.
+                            </td>
+                            <td>
+                                sabor intenso de chocolate, perfeito para os amantes de doces.
+                            </td>
+                            <td>R$ 12</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                croissant de amêndoas - Croissant recheado com creme de amêndoas.
+                            </td>
+                            <td>
+                                massa folhada crocante e recheio de amêndoas, uma combinação irresistível.
+                            </td>
+                            <td>R$ 15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                pão de queijo - Pão de queijo quentinho e saboroso.
+                            </td>
+                            <td>
+                                massa macia e recheio de queijo, perfeito para um lanche rápido.
+                            </td>
+                            <td>R$ 5</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                salgado de frango - Salgado recheado com frango temperado.
+                            </td>
+                            <td>
+                                massa crocante e recheio de frango suculento, ideal para um lanche saboroso.
+                            </td>
+                            <td>R$ 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                pão de mel - Pão de mel macio e aromático.
+                            </td>
+                            <td>
+                                sabor de mel e especiarias, perfeito para acompanhar um café.
+                            </td>
+                            <td>R$ 9</td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="Local " id="localizacao">
+            <div class="local">
+                <h2>Localização</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14979.178955312205!2d-45.71364897294829!3d-20.184270151567517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siguatama%20padaria!5e0!3m2!1spt-BR!2sbr!4v1771181150835!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-cafe">
+        <div class="footer-wrapper"> <!-- Apenas um container para centralizar -->
+
+            <!-- Identificação da Empresa -->
+            <section class="footer-brand">
+                <strong>🥖 Padaria do Bairro</strong>
+                <address>
+                    Rua Principal, 123<br>
+                    Bairro, Cidade - MG
+                </address>
+            </section>
+
+            <!-- Informação de Tempo/Horário -->
+            <section class="footer-hours">
+                <span class="label">Atendimento</span>
+                <p>Segunda a sexta: <time>06:00</time> às <time>20:00</time></p>
+                <p>Sábado: <time>06:00</time> às <time>18:00</time></p>
+                <p>Domingo: <time>07:00</time> às <time>14:00</time></p>
+            </section>
+
+            <!-- Contato e Navegação Legal -->
+            <section class="footer-contact">
+                <span class="label">Contato</span>
+                <a href="tel:+553799999999" class="phone">(37) 9999-9999</a>
+                <nav>
+                    <a href="privacidade.html">Política de Privacidade</a>
+                </nav>
+            </section>
+        </div>
+
+        <p class="copyright">
+            &copy; 2024 Padaria do Bairro. Todos os direitos reservados.
+        </p>
+        <a href="#" class="btn-topo">Volte ao início ▲</a>
+
+    </footer>
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

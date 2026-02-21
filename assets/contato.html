@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Padaria do Bairro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-principal">
+        <a href="/" aria-label="Padaria do Bairro - Página inicial">
+            <img class="logo" src="./images/logo.jpg" alt="Logo Padaria do Bairro">
+        </a>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-encomendas" aria-label="Fazer encomendas"><span>📦</span> Encomendas</button>
+    </header>
+
+    <main>
+
+        <section class="secao-contato">
+            <h1>Entre em contato conosco!</h1>
+            <p>Estamos aqui para ouvir você. Escolha o motivo, avalie o atendimento e descreva sua mensagem.</p>
+            <form class="form-contato" action="#" method="post">
+                <label for="motivo">Motivo do contato:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecione um motivo</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="avaliacao">Avalie nosso atendimento digital ou presencial aqui :</label>
+                <div class="avaliacao">
+
+                </div>
+
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+                    required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+
+    </main>
+    <footer class="footer-cafe">
+        <div class="footer-wrapper"> <!-- Apenas um container para centralizar -->
+
+            <!-- Identificação da Empresa -->
+            <section class="footer-brand">
+                <strong>🥖 Padaria do Bairro</strong>
+                <address>
+                    Rua Principal, 123<br>
+                    Bairro, Cidade - MG
+                </address>
+            </section>
+
+            <!-- Informação de Tempo/Horário -->
+            <section class="footer-hours">
+                <span class="label">Atendimento</span>
+                <p>Segunda a sexta: <time>06:00</time> às <time>20:00</time></p>
+                <p>Sábado: <time>06:00</time> às <time>18:00</time></p>
+                <p>Domingo: <time>07:00</time> às <time>14:00</time></p>
+            </section>
+
+            <!-- Contato e Navegação Legal -->
+            <section class="footer-contact">
+                <span class="label">Contato</span>
+                <a href="tel:+553799999999" class="phone">(37) 9999-9999</a>
+                <nav>
+                    <a href="privacidade.html">Política de Privacidade</a>
+                </nav>
+            </section>
+        </div>
+
+        <p class="copyright">
+            &copy; 2024 Padaria do Bairro. Todos os direitos reservados.
+        </p>
+        <a href="#" class="btn-topo">Volte ao início ▲</a>
+
+    </footer>
+</body>
+
+</html>
