@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria do Bairro - Tradição desde 1970</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,14 +17,15 @@
 <body>
     <header class="header-principal">
         <a href="index.html" aria-label="Padaria do Bairro - Página inicial">
-            <img class="logo" src="./assets/images/logo.jpg" alt="Logo Padaria do Bairro">
+            <img class="logo" src="./images/logo.jpg" alt="Logo Padaria do Bairro">
         </a>
         <nav aria-label="Menu principal">
             <ul>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./index.html#sobre">Sobre</a></li>
-                <li><a href="./assets/ofertas.html">Ofertas</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
                 <li><a href="./index.html#cardapio">Cardápio</a></li>
-                <li><a href="./assets/contato.html">Contato</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
         <button class="btn-encomendas" aria-label="Fazer encomendas"><span>📦</span> Encomendas</button>
@@ -46,25 +47,32 @@
                         aria-label="Localização da Padaria do Bairro">Localização</a>
                 </article>
                 <figure class="imagem-historia">
-                    <img src="./assets/images/Rectangle 10.jpg" alt="Padaria tradicional do bairro">
+                    <img src="./images/Rectangle 10.jpg" alt="Padaria tradicional do bairro">
+
                     <button class="btn-confira" onclick="window.location.href='./assets/ofertas.html'">confira</button>
                 </figure>
             </div>
         </section>
+        <section class="pesquisa">
+            <h2>Encontre o sabor perfeito</h2>
+            <input type="text" id="campo-filtro" placeholder="Escolha o preferido">
+            <ul id="resultado">
 
+            </ul>
+        </section>
         <section id="ofertas" class="secao">
             <div class="conteudo-secao">
                 <h2>Saborosos do dia!</h2>
                 <div class="grid-imagens">
                     <figure class="figura-grid">
-                        <img src="./assets/images/pao.jpg" alt="Pão fresco do dia">
+                        <img src="./images/pao.jpg" alt="Pão fresco do dia">
                         <p class="description">
                             Pão Croc-croc - Pão crocante com grãos selecionados.
                         </p>
                         <p class="description">R$ 8</p>
                     </figure>
                     <figure class="figura-grid">
-                        <img src="./assets/images/coofe.jpg" alt="Café quentinho">
+                        <img src="./images/coofe.jpg" alt="Café quentinho">
                         <p class="description">
                             Café gourmet - Sabor intenso e aroma irresistível.
                         </p>
@@ -161,7 +169,7 @@
                 <span class="label">Contato</span>
                 <a href="tel:+553799999999" class="phone">(37) 9999-9999</a>
                 <nav>
-                    <a href="./assets/privacidade.html">Política de Privacidade</a>
+                    <a href="./privacidade.html">Política de Privacidade</a>
                 </nav>
             </section>
         </div>
@@ -173,7 +181,7 @@
 
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
